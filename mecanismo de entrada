@@ -1,0 +1,17 @@
+#mecanismo de entrada, sem as regras:
+import random
+Fichas = 100
+print ('Você tem 100 fichas')
+quer_jogar = 'sim'
+input ('quer jogar? ' )
+while Fichas > 0 and quer_jogar == 'sim':
+    aposta = input('Muito bem, escolha qual tipo de aposta vai querer fazer, podendo ser: Line Bet, Fields, Any Craps ou Twelve: ')
+    if aposta == 'Line Bet' or aposta == 'line bet':
+        print('ok')
+    if aposta == ' Fields' or aposta == 'fields':
+        print('ok tmb')
+    if aposta =='Any Craps' or aposta == 'any craps':
+        print('okok')
+    if aposta == 'Twelve' or aposta == 'twelve':
+        print('super ok')
+    Fichas = 0
