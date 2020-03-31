@@ -1,0 +1,29 @@
+import random
+Fichas = 100
+print ('Você tem 100 fichas')
+quer_jogar = 'sim'
+input ('quer jogar? ' )
+while Fichas > 0 and quer_jogar == 'sim':
+    aposta = input('Muito bem, escolha qual tipo de aposta vai querer fazer, podendo ser: Line Bet, Fields, Any Craps ou Twelve: ')
+    if aposta == 'Line Bet' or aposta == 'line bet':
+        print('ok')
+    if aposta == ' Fields' or aposta == 'fields':
+        valor_apostado = int(input('quanto gostaria de apostar?' ))
+        r1 = random.randint (2,12)
+        if r1==5 or r1==6 or r1==7 or r1==8:
+            print (Fichas)
+        if r1==3 or r1==4 or r1==9 or r1==10 or r1==11:
+             Fichas = valor_apostado + Fichas
+        if r1==2:
+              Fichas = 3* valor_apostado + Fichas
+        else:
+            Fichas = 4* valor_apostado + Fichas
+    if aposta =='Any Craps' or aposta == 'any craps':
+        valor_aposta = int(input('quanto gostaria de apostar?' ))
+        r1 = random.randint (2,12)
+    if aposta == 'Twelve' or aposta == 'twelve':
+        valor_aposta = int(input('quanto gostaria de apostar?' ))
+        r1 = random.randint (2,12)
+    print('parabens, vc tem:' )
+    print(Fichas)
+    Fichas = 0
